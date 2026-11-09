@@ -67,32 +67,35 @@ ASAでは、軸線を交差点で分割したセグメントや道路中心線�
 以下のA・B・C・Dは、それぞれ1本の道路セグメントを表します。
 説明用に接続とコストを無向グラフへ単純化しており、depthmapX内部の方向を区別する処理まで表したものではありません。
 
-### Step 2：Angular Costの計算
+### Step 2：方向転換角度の計算（Angular Cost）
 
-進行順に並ぶ3点を、交差点へ入る前の点 $P$、交差点 $Q$、交差点を出た後の点 $R$ とします。
-同一の平面座標系上で、進入方向と退出方向のベクトルを次のように求めます。
+[スライド5枚目](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit#slide=id.h38a4a76f45796f64_0_17)と同じ順序・記号で説明します。
 
-$$
-\mathbf{u}=Q-P,\qquad \mathbf{v}=R-Q
-$$
+**1. 道路の座標からベクトルを計算**
 
-内積とベクトルの長さから、方向転換角度を計算できます（いずれも長さが0でないベクトルとします）。
+交差点に向かう進入方向を $\vec{a}$、交差点から出る退出方向を $\vec{b}$ とします。
+同一の平面座標系上で、各ベクトルは「進行先の座標 − 進行元の座標」から求めます。
 
-$$
-\theta=\arccos\left(\frac{\mathbf{u}\cdot\mathbf{v}}{\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert}\right),
-\qquad 0\leq\theta\leq\pi
-$$
-
-ここで $\theta$ はラジアンです。Angular Costへの変換は次のとおりです。
+**2. 角度を求める**
 
 $$
-\mathrm{Angular\ Cost}=\frac{2\theta}{\pi}
-=\frac{\theta_{\mathrm{deg}}}{90^\circ}
+\theta=\cos^{-1}\left(\frac{\vec{a}\cdot\vec{b}}{\lvert\vec{a}\rvert\lvert\vec{b}\rvert}\right)
 $$
 
-**両方のベクトルを進行方向にそろえることが重要です。**
-交差点から外へ向く2本のベクトル $P-Q$ と $R-Q$ を使った場合、そのなす角を $\alpha$ とすると、方向転換角度は $\pi-\alpha$ です。
-この違いを取り違えると、直進を180°の方向転換と誤って計算してしまいます。
+ベクトルの内積と、三平方の定理・平方根で求めたベクトルの長さから $\cos\theta$ を求め、逆三角関数で角度 $\theta$ を求めます。
+$\cos^{-1}$ は逆余弦（arccos）を表し、$1/\cos$ という意味ではありません。
+ここではスライドに合わせ、$\theta$ を **度（°）** で表します（0°〜180°）。
+計算結果がラジアンの場合は、$180/\pi$ を掛けて度に変換します。両ベクトルの長さは0でないものとします。
+
+**3. 角度をAngular Costに変換**
+
+$$
+\mathrm{Angular\ Cost}=\frac{\theta}{90^\circ}
+$$
+
+スライドの図のように、交差点へ右向きに進入し、上向きに退出する場合は、$\theta=90^\circ$ なのでAngular Costは1です。
+
+> ベクトルは両方とも進行方向にそろえます。両方を交差点から外へ向けると、そのなす角と方向転換角度は異なります。直進なら0°、直角に曲がれば90°となる向きで計算します。
 
 [Turner（2007, Section 3.1）](https://discovery.ucl.ac.uk/id/eprint/2092/1/2092.pdf)に基づく対応は次のとおりです。
 
