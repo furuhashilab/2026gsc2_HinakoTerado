@@ -217,7 +217,7 @@ $$
 - アルゴリズムの再現：小さなネットワークで手計算した指標とdepthmapXの結果を照合する。
 
 
-## 5. 参考文献・関連リンク
+## 6. 参考文献・関連リンク
 
 ### 参考文献
 
@@ -234,7 +234,7 @@ $$
 - [depthmapX公式GitHub](https://github.com/SpaceGroupUCL/depthmapX)
 - [Turner（2007）の公開本文（UCL Discovery）](https://discovery.ucl.ac.uk/id/eprint/2092/)
 
-## 6. ライセンス
+## 7. ライセンス
 
 Copyright © 2026 Hinako Terado.
 
