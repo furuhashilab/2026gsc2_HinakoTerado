@@ -32,6 +32,8 @@ ASAによるネットワーク分析と道路勾配の計算を別々に行い�
 - 掲載誌：*The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences*, L-4/W1-2026, 311–318
 - DOI：[10.5194/isprs-archives-L-4-W1-2026-311-2026](https://doi.org/10.5194/isprs-archives-L-4-W1-2026-311-2026)
 
+Walkability研究の概要・分析方法・結果・発表資料・研究過程は、[研究ポートフォリオ（usakooon/research-portfolio）](https://github.com/usakooon/research-portfolio)にまとめています。
+
 このREADMEでは、地域ごとの研究結果の詳細は元論文に譲り、分析に用いたASAの計算原理に焦点を当てます。
 
 ## 2. Angular Segment Analysis（ASA）とは？
@@ -226,6 +228,7 @@ $$
 
 ### 関連リンク
 
+- [Walkability研究ポートフォリオ：研究概要・分析方法・結果・研究過程](https://github.com/usakooon/research-portfolio)
 - [発表用スライド：Angular Segment Analysisの理解へ](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit)
 - [FOSS4G 2026で発表した元論文（出版社ページ）](https://isprs-archives.copernicus.org/articles/L-4-W1-2026/311/2026/)
 - [depthmapX公式GitHub](https://github.com/SpaceGroupUCL/depthmapX)
