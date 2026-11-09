@@ -233,3 +233,12 @@ $$
 - [FOSS4G 2026で発表した元論文（出版社ページ）](https://isprs-archives.copernicus.org/articles/L-4-W1-2026/311/2026/)
 - [depthmapX公式GitHub](https://github.com/SpaceGroupUCL/depthmapX)
 - [Turner（2007）の公開本文（UCL Discovery）](https://discovery.ucl.ac.uk/id/eprint/2092/)
+
+## 6. ライセンス
+
+Copyright © 2026 Hinako Terado.
+
+特に記載のない限り、本リポジトリ内の自作の文章・図表は、[Creative Commons 表示4.0国際（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/deed.ja)で公開します。
+著作者の表示、ライセンスへのリンク、変更した場合の変更表示を条件に、共有・改変・商用利用が可能です。ライセンス全文は [LICENSE.md](LICENSE.md) を参照してください。
+
+引用・参照している論文、外部資料、第三者の図表などには、それぞれの権利・ライセンスが適用されます。
