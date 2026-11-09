@@ -217,7 +217,7 @@ $$
 
 ### 関連リンク
 
-- [学習用Googleスライド：Angular Segment Analysisの理解へ](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit)
+- [発表用スライド：Angular Segment Analysisの理解へ](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit)
 - [FOSS4G 2026で発表した元論文（出版社ページ）](https://isprs-archives.copernicus.org/articles/L-4-W1-2026/311/2026/)
 - [depthmapX公式GitHub](https://github.com/SpaceGroupUCL/depthmapX)
 - [Turner（2007）の公開本文（UCL Discovery）](https://discovery.ucl.ac.uk/id/eprint/2092/)
