@@ -4,7 +4,7 @@
 
 FOSS4G 2026のAcademic Trackで、高齢者のWalkability（歩きやすさ）に関する研究を発表しました。
 質疑応答で、研究に利用したAngular Segment Analysis（ASA）の計算原理を十分に説明できなかったことが、この学習の出発点です。
-本リポジトリでは、[作成したGoogleスライド](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit)を主な基礎資料とし、論文とdepthmapX公式資料を参照しながら、道路ネットワークからNAIN・NACHを求める考え方を整理します。
+本リポジトリでは、[発表用スライド](https://docs.google.com/presentation/d/1Gt-tbDPdKop2Z40APwutNTq_KNTRYnrbnygELLge3MY/edit)を主な基礎資料とし、論文とdepthmapX公式資料を参照しながら、道路ネットワークからNAIN・NACHを求める考え方を整理します。
 研究成果の再発表ではなく、研究で使った分析手法を自分の言葉で説明するための技術学習記録です。
 
 ## 1. 研究背景：FOSS4G 2026でのWalkability研究
